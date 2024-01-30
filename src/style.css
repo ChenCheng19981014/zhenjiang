@@ -1,0 +1,24 @@
+:root {
+  --scale-ratio-x: 2.133; /* 4096 / 1920 */
+  --scale-ratio-y: 2; /* 2160 / 1080 */
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#app {
+  width: 1920px;
+  height: 1080px;
+  /* width: 100%; */
+  /* height: 100%; */
+  transform-origin: top left;
+  /* transform: scale(var(--scale-ratio-x), var(--scale-ratio-y)); */
+  /* transform: scale(var(--scale-ratio-x), var(--scale-ratio-y)); */
+  /* background-color: black;  */
+}

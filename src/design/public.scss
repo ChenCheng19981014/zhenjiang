@@ -1,0 +1,63 @@
+//全局公共样式
+
+@font-face {
+  font-family:"SourceHanSansCN";
+  src: url("./font/SourceHanSansCN-Medium.otf");
+}
+
+@font-face {
+  font-family: "YouSheBiaoTiHei-2";
+  src: url("./font/YouSheBiaoTiHei-2.ttf");
+}
+
+@font-face {
+  font-family: "TCloudNumber-Bold";
+  src: url("./font/TCloudNumber-Bold.ttf");
+}
+
+
+@font-face {
+  font-family: "TCloudNumber-Regular";
+  src: url("./font/TCloudNumber-Regular.ttf");
+}
+
+@font-face {
+  font-family: "number";
+  src: url("./font/D-DIN.otf");
+}
+
+@font-face{
+  font-family: "pm";
+  src:url("./font/庞门正道标题体2.0增强版.ttf");
+}
+
+@font-face{
+  font-family: "small";
+  src: url('./font/SourceHanSansCN-Regular.otf');
+}
+
+@font-face{
+  font-family: "Furore2";
+  src: url('./font/Furore-2.otf');
+}
+
+
+@keyframes leftEnterRight {
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+@keyframes RightEnterLeft {
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+
