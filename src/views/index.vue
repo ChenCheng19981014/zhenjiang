@@ -4,12 +4,6 @@
       <!-- 头部 -->
       <div class="header"></div>
 
-      <!-- 返回系统 -->
-      <div class="backToSystem" @click="$router.replace({ name: 'map' })"></div>
-
-      <!-- 用户 -->
-      <div class="user"></div>
-
       <!-- 子路由 -->
       <keep-alive>
         <router-view v-if="$route.meta.keepAlive"></router-view>
@@ -19,19 +13,11 @@
   </fit-layout>
 </template>
 <script>
-import autofit from 'autofit.js'
-
 export default {
   data() {
     return {};
   },
   mounted() {
-    // autofit.init({
-    //   dw: 2400,
-    //   dh: 1500,
-    //   el: "#app",
-    //   resize: true
-    // })
   },
   methods: {},
 };
@@ -51,16 +37,14 @@ export default {
   width: 100%;
   height: 100%;
   position: relative;
-  // background-image: url("./../assets/img/scene-mask.png");
-  // background-size: 100% 100%;
-  // background-repeat: no-repeat;
+  background-image: radial-gradient(circle at 50% 50%, #00162600 0%, #0016260d 19%, #001626 50%);
 
   .header {
     background-image: url("./../assets/img/顶栏.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 100%;
-    height: 161px;
+    height: 122px;
     position: absolute;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -69,31 +53,5 @@ export default {
     animation: enter 1s ease;
   }
 
-
-  .backToSystem {
-    top: 34px;
-    left: 517px;
-    width: 165.93px;
-    height: 32px;
-    position: absolute;
-    background-image: url("./../assets/img/backToSystem.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    z-index: 2;
-    cursor: pointer;
-  }
-
-  .user {
-    position: absolute;
-    top: 34px;
-    right: 510px;
-    width: 165.93px;
-    height: 32px;
-    background-image: url("./../assets/img/user.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    z-index: 2;
-    cursor: pointer;
-  }
 }
 </style>

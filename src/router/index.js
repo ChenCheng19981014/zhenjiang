@@ -11,23 +11,15 @@ const routes = [
       keepAlive: true, //设置页面是否需要使用缓存
     },
     component: () => import("./../views/index.vue"),
-    redirect: "/map",
+    redirect: "/park",
     children: [
       {
-        path: "/map",
-        name: "map",
+        path: "/park",
+        name: "park",
         meta: {
           keepAlive: true, //设置页面是否需要使用缓存
         },
-        component: () => import("./../views/map/index.vue"),
-      },
-      {
-        path: "/river",
-        name: "river",
-        meta: {
-          keepAlive: true, //设置页面是否需要使用缓存
-        },
-        component: () => import("./../views/river/index.vue"),
+        component: () => import("./../views/park/index.vue"),
       },
     ],
   },
